@@ -17,11 +17,16 @@ export default class Tweetobject extends React.Component{
 
           {
           this.props.twitt[this.props.number].value.extended_entities!==undefined?
-            (<Col md={12} mdOffset={0} sm={12} smOffset={0} xs={12} xsOffset={0}>
-            <img src={this.props.twitt[this.props.number].value.extended_entities.media[this.props.number].media_url} style={twitterimage}/>
-            </Col>)
+          [
+            (this.props.twitt[this.props.number].value.extended_entities.media[0]?
+              <Col md={12} mdOffset={0} sm={12} smOffset={0} xs={12} xsOffset={0} key={this.props.number}>
+              <img src={this.props.twitt[this.props.number].value.extended_entities.media[0].media_url} style={twitterimage}/>
+              </Col>
             :
-          (<div>no media</div>)
+            <div>media but not image</div>
+            ),]
+          :
+          <div></div>
           }
 
           {this.props.twitt[this.props.number].value.retweeted_status!== undefined?(

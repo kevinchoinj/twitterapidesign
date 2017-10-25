@@ -9,8 +9,10 @@ export default class Twittercont extends React.Component{
     this.state={
       twitt: [
         {key:'0', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
-        {key:'1', value:{"text":"", "created_at":"", retweeted_status: {created_at:"asdf"}}}, 
-        {key:'2', value:{"text":"", "created_at":"", retweeted_status: {created_at:"asdf"}}}, 
+        {key:'1', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
+        {key:'2', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
+        {key:'3', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
+        {key:'4', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
       ]
     }
   }
@@ -38,6 +40,7 @@ export default class Twittercont extends React.Component{
       backgroundColor:"#af9759",
       paddingTop:"50px",
       paddingBottom:"50px",
+      overflow:"auto",
     }
     const tweet={
       marginBottom:"50px",
@@ -55,7 +58,9 @@ export default class Twittercont extends React.Component{
             <Tweetobject twitt={this.state.twitt} number="0"/>
             <Tweetobject twitt={this.state.twitt} number="1"/>
             <Tweetobject twitt={this.state.twitt} number="2"/>
-            
+            <Tweetobject twitt={this.state.twitt} number="3"/>
+            <Tweetobject twitt={this.state.twitt} number="4"/>
+
           </div>
           )
           :
