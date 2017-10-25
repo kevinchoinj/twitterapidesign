@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Twittercont from '../components/Twittercont';
 
 export default class Home extends React.Component{
