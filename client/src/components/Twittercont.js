@@ -1,12 +1,14 @@
 import React from 'react';
 import {Col} from 'react-bootstrap';
 
+import Tweetobject from './Tweetobject';
+
 export default class Twittercont extends React.Component{
   constructor(props){
     super(props);
     this.state={
       twitt: [
-        {key:'0', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}}, 
+        {key:'0', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
         {key:'1', value:{"text":"", "created_at":"", retweeted_status: {created_at:"asdf"}}}, 
         {key:'2', value:{"text":"", "created_at":"", retweeted_status: {created_at:"asdf"}}}, 
       ]
@@ -40,53 +42,20 @@ export default class Twittercont extends React.Component{
     const tweet={
       marginBottom:"50px",
     }
+    const twitterimage={
+      width:"100%",
+    }
     return(
       <Col md={2} mdOffset={10} sm={10} smOffset={1} xs={10} xsOffset={1} style={twittercontainer}>
+
         {twitt.length ? (
 
           <div onClick={this.twitteroutput}>
-          <Col md={10} mdOffset={1} sm={10} smOffset={1} xs={10} xsOffset={1} style={tweet}>
-          {this.state.twitt["0"].value.retweeted_status!== undefined?(
-            <div>
-            {this.state.twitt["0"].value.retweeted_status.created_at}
-            </div>)
-            :
-            (<div>
-            {this.state.twitt["0"].value.created_at}
-            </div>
-            )
-          }
-          <br/>
-          {this.state.twitt["0"].value.text}
-          </Col>
-          <Col md={10} mdOffset={1} sm={10} smOffset={1} xs={10} xsOffset={1} style={tweet}>
-          {this.state.twitt["1"].value.retweeted_status!==undefined ?(
-            <div>
-            {this.state.twitt["1"].value.retweeted_status.created_at}
-            </div>)
-            :
-            (<div>
-            {this.state.twitt["1"].value.created_at}
-            </div>
-            )
-          }
-          <br/>
-          {this.state.twitt["1"].value.text}
-          </Col>
-          <Col md={10} mdOffset={1} sm={10} smOffset={1} xs={10} xsOffset={1} style={tweet}>
-          {this.state.twitt["2"].value.retweeted_status!==undefined ?(
-            <div>
-            {this.state.twitt["2"].value.retweeted_status.created_at}
-            </div>)
-            :
-            (<div>
-            {this.state.twitt["2"].value.created_at}
-            </div>
-            )
-          }
-          <br/>
-          {this.state.twitt["2"].value.text}
-          </Col>
+
+            <Tweetobject twitt={this.state.twitt} number="0"/>
+            <Tweetobject twitt={this.state.twitt} number="1"/>
+            <Tweetobject twitt={this.state.twitt} number="2"/>
+            
           </div>
           )
           :
