@@ -12,7 +12,7 @@ export default class Background extends React.Component{
       background: 'url('+bgimage+')',
 			backgroundRepeat: "no-repeat",
 			backgroundPosition: "center top",
-			backgroundSize: "cover",
+      backgroundSize: "cover",
     }
     return(
       <div style={bg}>
