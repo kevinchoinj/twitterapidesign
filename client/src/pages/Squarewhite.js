@@ -1,6 +1,6 @@
 import React from 'react';
-import Twittercont from '../squaregold/Twittercont';
-import Background from '../squaregold/Background';
+import Twittercont from '../squarewhite/Twittercont';
+import Background from '../squarewhite/Background';
 
 export default class Square extends React.Component{
   constructor(props){

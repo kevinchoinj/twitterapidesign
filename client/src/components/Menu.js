@@ -24,10 +24,19 @@ export default class Menu extends React.Component{
         <Link to='/' style={linkstyle}>Home</Link>
       </Col>
       <Col md={1}>
-        <Link to='/square' style={linkstyle}>Squaregold</Link>
+        <Link to='/squaregold' style={linkstyle}>Squaregold</Link>
       </Col>
       <Col md={1}>
-        <Link to='/tall' style={linkstyle}>Tallgold</Link>
+        <Link to='/tallgold' style={linkstyle}>Tallgold</Link>
+      </Col>
+      <Col md={1}>
+        <Link to='/squaregray' style={linkstyle}>Squaregray</Link>
+      </Col>
+      <Col md={1}>
+        <Link to='/squarewhite' style={linkstyle}>Squarewhite</Link>
+      </Col>
+      <Col md={1}>
+        <Link to='/squareprops' style={linkstyle}>Squareprops</Link>
       </Col>
       </div>
     )
