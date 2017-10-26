@@ -1,4 +1,6 @@
 import React from 'react';
+import Twittercont from '../tallgold/Twittercont';
+import Background from '../tallgold/Background';
 
 export default class Home extends React.Component{
   constructor(props){
@@ -12,6 +14,8 @@ export default class Home extends React.Component{
     return(
       <div>
         
+        <Background/>
+        <Twittercont/>
       </div>
     )
   }

@@ -33,7 +33,6 @@ export default class Twittercont extends React.Component{
     const { twitt } = this.state;
 
     const twittercontainer={
-      width:"500px",
       height:"500px",
       position:"absolute",
       bottom:"50px",
@@ -46,7 +45,7 @@ export default class Twittercont extends React.Component{
 
     return(
       <div>
-      <div style={twittercontainer} className="scrollcustom">
+      <Col md={4} sm={6} xs={10} style={twittercontainer} className="scrollcustom">
       
         {twitt.length ? (
           <div onClick={this.twitteroutput} >
@@ -63,7 +62,7 @@ export default class Twittercont extends React.Component{
           </div>
           )}
 
-      </div>
+      </Col>
       </div>
     )
   }
