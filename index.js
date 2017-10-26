@@ -26,7 +26,7 @@ var client = new Twitter({
   access_token_key: accesstoken,
   access_token_secret: accesssecret
  });
- var params = {screen_name: 'lelepons', count:5};
+ var params = {screen_name: 'Omnidestiny', count:5};
 
 app.get('/api/twitter', (req, res) => {
   client.get('statuses/user_timeline', params, function(error, tweets, response) {

@@ -1,5 +1,5 @@
 import React from 'react';
-import Twittercont from '../components/Twittercont';
+import Twittercont from '../square/Twittercont';
 import Background from '../components/Background';
 
 export default class Home extends React.Component{
@@ -13,6 +13,7 @@ export default class Home extends React.Component{
   render(){
     return(
       <div>
+        
         <Background/>
         <Twittercont/>
       </div>
