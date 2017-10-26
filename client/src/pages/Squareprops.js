@@ -14,7 +14,7 @@ export default class Square extends React.Component{
     return(
       <div>
         <Background/>
-        <Twittercont/>
+        <Twittercont  bgcolor="rgba(229,171,195,.8)" timebg="rgba(183,136,156,1)" textcolor="rgba(0,0,0,1)"/>
       </div>
     )
   }

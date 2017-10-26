@@ -6,7 +6,7 @@ export default class Tweetobject extends React.Component{
   render(){
     const tweet={
       fontFamily:"Montserrat, Helvetica",
-      color:"#000",
+      color:this.props.textcolor,
       paddingTop:"25px",
     }
     const twitterimage={
@@ -14,7 +14,7 @@ export default class Tweetobject extends React.Component{
       marginBottom:"25px",
     }
     const timebackground={
-      backgroundColor:"#ddd",
+      backgroundColor:this.props.timebg,
       paddingTop:"25px",
       paddingBottom:"25px",
       marginTop:"25px",

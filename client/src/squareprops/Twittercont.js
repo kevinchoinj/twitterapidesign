@@ -38,7 +38,7 @@ export default class Twittercont extends React.Component{
       bottom:"50px",
       right:"50px",
       overflow:"auto",
-      backgroundColor:"rgba(255,255,255,.8)",
+      backgroundColor:this.props.bgcolor,
 
     }
 
@@ -48,11 +48,11 @@ export default class Twittercont extends React.Component{
       
         {twitt.length ? (
           <div onClick={this.twitteroutput} >
-            <Tweetobject twitt={this.state.twitt} number="0"/>
-            <Tweetobject twitt={this.state.twitt} number="1"/>
-            <Tweetobject twitt={this.state.twitt} number="2"/>
-            <Tweetobject twitt={this.state.twitt} number="3"/>
-            <Tweetobject twitt={this.state.twitt} number="4"/>
+            <Tweetobject twitt={this.state.twitt} number="0" timebg={this.props.timebg} textcolor={this.props.textcolor}/>
+            <Tweetobject twitt={this.state.twitt} number="1" timebg={this.props.timebg} textcolor={this.props.textcolor}/>
+            <Tweetobject twitt={this.state.twitt} number="2" timebg={this.props.timebg} textcolor={this.props.textcolor}/>
+            <Tweetobject twitt={this.state.twitt} number="3" timebg={this.props.timebg} textcolor={this.props.textcolor}/>
+            <Tweetobject twitt={this.state.twitt} number="4" timebg={this.props.timebg} textcolor={this.props.textcolor}/>
           </div>
           )
           :
