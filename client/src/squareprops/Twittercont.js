@@ -34,6 +34,8 @@ export default class Twittercont extends React.Component{
     const { twitt } = this.state;
 
     const twittercontainer={
+      paddingTop:"50px",
+      paddingBottom:"50px",
       height:"500px",
       position:"absolute",
       bottom:"50px",
@@ -50,17 +52,17 @@ export default class Twittercont extends React.Component{
 
     return(
       <div>
-      <Col md={5} sm={6} xs={10} style={twittercontainer} className="scrollcustom3">
+      <Col md={5} sm={10} xs={10} style={twittercontainer} className="scrollcustom4">
       
         {twitt.length ? (
           <Col md={10} mdOffset={1} >
 
-          <Col md={6} style={columnstyle}>
+          <Col md={6}  sm={6} style={columnstyle}>
           <Tweetobject twitt={this.state.twitt} number="0" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
           <Tweetobject twitt={this.state.twitt} number="2" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
           <Tweetobject twitt={this.state.twitt} number="4" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
           </Col>
-          <Col md={6} style={columnstyle}>
+          <Col md={6}  sm={6} style={columnstyle}>
           <Tweetobject twitt={this.state.twitt} number="1" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
           <Tweetobject twitt={this.state.twitt} number="3" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
           <Tweetobject twitt={this.state.twitt} number="5" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
