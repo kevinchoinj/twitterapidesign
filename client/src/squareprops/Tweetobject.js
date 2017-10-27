@@ -21,6 +21,7 @@ export default class Tweetobject extends React.Component{
       position:"relative",
       display:"inline-block",
       float:"left",
+      fontSize:"12px",
     }
     const twitterimage={
       width:"100%",
