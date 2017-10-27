@@ -1,5 +1,5 @@
 import React from 'react';
-import bgimage from '../images/lion.jpg';
+import bgimage from '../images/cherry.jpeg';
 
 export default class Background extends React.Component{
   render(){
