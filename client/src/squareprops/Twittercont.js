@@ -39,7 +39,6 @@ export default class Twittercont extends React.Component{
       height:"500px",
       position:"absolute",
       bottom:"50px",
-      right:"50px",
       overflow:"auto",
       backgroundColor:this.props.bgcolor,
       border:"2px solid "+this.props.tweetcolor,
@@ -53,7 +52,7 @@ export default class Twittercont extends React.Component{
 
     return(
       <div>
-      <Col md={5} sm={10} xs={10} style={twittercontainer} className="scrollcustom4">
+      <Col md={5} mdOffset={6} sm={10} smOffset={1} xs={12} xsOffset={0} style={twittercontainer} className="scrollcustom4">
       
         {twitt.length ? (
           <Col md={10} mdOffset={1} >

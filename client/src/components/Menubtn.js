@@ -11,11 +11,13 @@ export default class Menubtn extends React.Component{
       position:"absolute",
       top:"25px",
       left:"25px",
-      backgroundColor:"#fff",
+      backgroundColor:"#ff0000",
+      color:"#000"
     }
 
     return(
       <div style={btn} onClick={this.props.toggler}>
+      menu
       </div>
     )
   }
