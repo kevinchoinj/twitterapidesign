@@ -11,6 +11,7 @@ export default class Tweetobject extends React.Component{
       textAlign:"center",
       background: this.props.tweetcolor,
       overflow: "hidden",
+      verticalAlign:"top",
 
       WebkitTransition: ".4s ease-out",
       MozTransition: ".4s ease-out",
@@ -18,7 +19,8 @@ export default class Tweetobject extends React.Component{
       transition:".4s ease-out",
       wordWrap:"break-word",
       position:"relative",
-
+      display:"inline-block",
+      float:"left",
     }
     const twitterimage={
       width:"100%",
@@ -33,15 +35,14 @@ export default class Tweetobject extends React.Component{
     }
 
     return(
-      <div>
-          <Col md={6} mdOffset={0} sm={12} smOffset={0} xs={12} xsOffset={0} style={tweet}>
+        <Col md={12} mdOffset={0} sm={12} smOffset={0} xs={12} xsOffset={0} style={tweet}>
 
         {/*media, posts image if image*/}
           {
           this.props.twitt[this.props.number].value.extended_entities!==undefined?
           [
             (this.props.twitt[this.props.number].value.extended_entities.media[0]?
-              <Col md={8} mdOffset={2} sm={10} smOffset={1} xs={10} xsOffset={1} key={this.props.number}>
+              <Col md={10} mdOffset={1} sm={10} smOffset={1} xs={10} xsOffset={1} key={this.props.number}>
               <img src={this.props.twitt[this.props.number].value.extended_entities.media[0].media_url} style={twitterimage}/>
               </Col>
             :
@@ -72,7 +73,6 @@ export default class Tweetobject extends React.Component{
 
 
           </Col>
-        </div>
     )
   }
 }

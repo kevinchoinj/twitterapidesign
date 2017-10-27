@@ -13,6 +13,7 @@ export default class Twittercont extends React.Component{
         {key:'2', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
         {key:'3', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
         {key:'4', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
+        {key:'5', value:{"text":"", "created_at":"", retweeted_status: {created_at:""}}, extended_entities:{media:[{media_url: ""}]}}, 
       ],
 
     }
@@ -44,15 +45,22 @@ export default class Twittercont extends React.Component{
 
     return(
       <div>
-      <Col md={4} sm={6} xs={10} style={twittercontainer} className="scrollcustom3">
+      <Col md={5} sm={6} xs={10} style={twittercontainer} className="scrollcustom3">
       
         {twitt.length ? (
-          <Col md={10} mdOffset={1} >
-            <Tweetobject twitt={this.state.twitt} number="0" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
-            <Tweetobject twitt={this.state.twitt} number="1" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
-            <Tweetobject twitt={this.state.twitt} number="2" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
-            <Tweetobject twitt={this.state.twitt} number="3" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
-            <Tweetobject twitt={this.state.twitt} number="4" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
+          <Col md={8} mdOffset={2} >
+
+          <Col md={6}>
+          <Tweetobject twitt={this.state.twitt} number="0" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
+          <Tweetobject twitt={this.state.twitt} number="2" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
+          <Tweetobject twitt={this.state.twitt} number="4" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
+          </Col>
+          <Col md={6}>
+          <Tweetobject twitt={this.state.twitt} number="1" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
+          <Tweetobject twitt={this.state.twitt} number="3" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
+          <Tweetobject twitt={this.state.twitt} number="5" timebg={this.props.timebg} textcolor={this.props.textcolor} tweetcolor={this.props.tweetcolor}/>
+          </Col>
+ 
           </Col>
           )
           :
