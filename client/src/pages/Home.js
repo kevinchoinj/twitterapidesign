@@ -9,8 +9,14 @@ export default class Home extends React.Component{
   }
 
   render(){
+    const bg={
+      height:"100vh",
+      width:"100vw",
+      position:"absolute",
+      backgroundColor:"#fff",
+    }
     return(
-      <div>
+      <div style={bg}>
         
       </div>
     )
