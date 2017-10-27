@@ -8,7 +8,17 @@ export default class Tweetobject extends React.Component{
       fontFamily:"Montserrat, Helvetica",
       color:this.props.textcolor,
       paddingTop:"25px",
-      textAlign:"center"
+      textAlign:"center",
+      background: this.props.tweetcolor,
+      overflow: "hidden",
+
+      WebkitTransition: ".4s ease-out",
+      MozTransition: ".4s ease-out",
+      OTransition: ".4s ease-out",
+      transition:".4s ease-out",
+      wordWrap:"break-word",
+      position:"relative",
+
     }
     const twitterimage={
       width:"100%",
@@ -24,7 +34,7 @@ export default class Tweetobject extends React.Component{
 
     return(
       <div>
-          <Col md={12} mdOffset={0} sm={12} smOffset={0} xs={12} xsOffset={0} style={tweet}>
+          <Col md={6} mdOffset={0} sm={12} smOffset={0} xs={12} xsOffset={0} style={tweet}>
 
         {/*media, posts image if image*/}
           {
