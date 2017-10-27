@@ -29,7 +29,7 @@ export default class Menu extends React.Component{
 
     return(
       <div>
-        <Menupanel offset={this.state.offset}/>
+        <Menupanel offset={this.state.offset} toggler={this.togglepanel}/>
         <Menubtn toggler={this.togglepanel}/>
       </div>
     )

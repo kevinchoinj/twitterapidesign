@@ -26,22 +26,22 @@ export default class Menupanel extends React.Component{
     return(
       <Col md={4} sm={12} xs={12} style= {menupanel}>
       <div>
-        <Link to='/' style={linkstyle}>Home</Link>
+        <Link to='/' style={linkstyle} onClick={this.props.toggler}>Home</Link>
       </div>
       <div>
-        <Link to='/squaregold' style={linkstyle}>Squaregold</Link>
+        <Link to='/squaregold' style={linkstyle} onClick={this.props.toggler}>Squaregold</Link>
       </div>
       <div>
-        <Link to='/tallgold' style={linkstyle}>Tallgold</Link>
+        <Link to='/tallgold' style={linkstyle} onClick={this.props.toggler}>Tallgold</Link>
       </div>
       <div>
-        <Link to='/squaregray' style={linkstyle}>Squaregray</Link>
+        <Link to='/squaregray' style={linkstyle} onClick={this.props.toggler}>Squaregray</Link>
       </div>
       <div>
-        <Link to='/squarewhite' style={linkstyle}>Squarewhite</Link>
+        <Link to='/squarewhite' style={linkstyle} onClick={this.props.toggler}>Squarewhite</Link>
       </div>
       <div>
-        <Link to='/squareprops' style={linkstyle}>Squareprops</Link>
+        <Link to='/squareprops' style={linkstyle} onClick={this.props.toggler}>Squareprops</Link>
       </div>
       </Col>
     )

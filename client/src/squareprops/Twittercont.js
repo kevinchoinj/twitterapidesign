@@ -43,6 +43,7 @@ export default class Twittercont extends React.Component{
       overflow:"auto",
       backgroundColor:this.props.bgcolor,
       border:"2px solid "+this.props.tweetcolor,
+      WebkitOverflowScrolling:"touch",
 
     }
     const columnstyle={
